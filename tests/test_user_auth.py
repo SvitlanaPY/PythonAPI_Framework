@@ -39,7 +39,7 @@ class TestUserAuth(BaseCase):
         # assert "user_id" in response2.json(), "There is no user id in the response2"
         # user_id_from_check_method = response2.json()["user_id"]   # user_id_from_check_method = response2.json().get("user_id")
         self.user_id_from_check_method = self.get_json_value(response2, "user_id")
-        assert self.user_id_from_check_method == self.user_id_from_auth_method, "User id from auth method is not equal to user id from check method"
+        assert self.user_id_from_check_method == self.user_id_from_auth_method, "User id from login-method is not equal to user id from auth-method"
 
 
     @pytest.mark.parametrize('condition', exclude_params)
@@ -49,7 +49,7 @@ class TestUserAuth(BaseCase):
                 "https://playground.learnqa.ru/api/user/auth",
                 headers={"x-csrf-token": self.token}
             )
-        else:
+        elif condition == "no_token":
             response2 = requests.get(
                 "https://playground.learnqa.ru/api/user/auth",
                 cookies={"auth_sid": self.auth_sid}
@@ -60,5 +60,3 @@ class TestUserAuth(BaseCase):
         # user_id_from_check_method = response2.json()["user_id"]   # user_id_from_check_method = response2.json().get("user_id")
         self.user_id_from_check_method = self.get_json_value(response2, "user_id")
         assert self.user_id_from_check_method == 0, f"User is authorized with {condition}"
-
-
