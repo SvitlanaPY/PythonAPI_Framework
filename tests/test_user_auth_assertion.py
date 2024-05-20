@@ -1,6 +1,7 @@
 import pytest
 import requests
 from lib.base_case import BaseCase
+from lib.assertions import Assertions
 
 class TestUserAuth(BaseCase):
     exclude_params = [
@@ -35,13 +36,16 @@ class TestUserAuth(BaseCase):
             headers={"x-csrf-token": self.token},
             cookies={"auth_sid": self.auth_sid}
         )
-        assert response2.status_code == 200, 'Wrong status code'
 
+        Assertions.assert_json_value_by_name(
+            response2,
+            "user_id",
+            self.user_id_from_auth_method,
+            "User id from login-method is not equal to user id from auth-method"
+        )
         # assert "user_id" in response2.json(), "There is no user id in the response2"
         # user_id_from_check_method = response2.json()["user_id"]   # user_id_from_check_method = response2.json().get("user_id")
-        # the above two lines is replaced with one line below
-        self.user_id_from_check_method = self.get_json_value(response2, "user_id")
-        assert self.user_id_from_check_method == self.user_id_from_auth_method, "User id from login-method is not equal to user id from auth-method"
+        # assert self.user_id_from_check_method == self.user_id_from_auth_method, "User id from login-method is not equal to user id from auth-method"
 
 
     @pytest.mark.parametrize('condition', exclude_params)
@@ -56,10 +60,15 @@ class TestUserAuth(BaseCase):
                 "https://playground.learnqa.ru/api/user/auth",
                 cookies={"auth_sid": self.auth_sid}
             )
-        assert response2.status_code == 200, 'Wrong status code'
 
+        Assertions.assert_json_value_by_name(
+            response2,
+            "user_id",
+            0,
+            f"User is authorized with {condition}"
+        )
         # assert "user_id" in response2.json(), "There is no user id in the response2"
         # user_id_from_check_method = response2.json()["user_id"]   # user_id_from_check_method = response2.json().get("user_id")
-        # the above two lines is replaced with one line below
-        self.user_id_from_check_method = self.get_json_value(response2, "user_id")
-        assert self.user_id_from_check_method == 0, f"User is authorized with {condition}"
+        # assert self.user_id_from_check_method == 0, f"User is authorized with {condition}"
+
+# PS D:\AutomationAPI\PythonAPI_Framework> python -m pytest -s tests/test_user_auth_assertion.py

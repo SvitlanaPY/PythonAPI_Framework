@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feffa24e-2ff1-40ce-9414-1cc34e1c20e4" name="Changes" comment="&quot;Python Framework&quot;">
+      <change afterPath="$PROJECT_DIR$/lib/assertions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_user_auth_assertion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_user_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_auth.py" afterDir="false" />
     </list>
@@ -49,17 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test_user_auth.py.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/AutomationAPI/PythonAPI_Framework&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_user_auth.py.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/AutomationAPI/PythonAPI_Framework/tests"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AutomationAPI\PythonAPI_Framework\tests" />
       <recent name="D:\AutomationPython\Selenium_Python_Automation\PythonAPI_Framework" />
       <recent name="D:\AutomationPython\Selenium_Python_Automation\PythonAPI_Framework\tests" />
       <recent name="D:\AutomationPython\Selenium_Python_Automation\PythonAPI_Framework\lib" />
@@ -175,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716231554545</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;Python Framework&quot;">
+      <option name="closed" value="true" />
+      <created>1716232452670</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232452670</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
