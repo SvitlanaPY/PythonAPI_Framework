@@ -30,3 +30,11 @@ class BaseCase:
             assert False, f"Response is not in json format. Response text is {response.text}"
         assert name in response_as_dict, f"Response JSON doesn't have key {name}"
         return response_as_dict[name]
+
+#       def get_json_value(self, response: Response, name):
+#         try:
+#             response_as_dict = response.json()
+#         assert name in response_as_dict, f"Response JSON doesn't have key {name}"
+#         return response_as_dict[name]
+#         except JSONDecodeError:   # якщо response.json() падає в помилку JSONDecodeError, то про цю помилку потрібно повідомити і потрібно зафіксувати, що наш тест фейланувся
+#             assert False, f"Response is not in json format. Response text is {response.text}"
