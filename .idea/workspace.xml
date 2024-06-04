@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feffa24e-2ff1-40ce-9414-1cc34e1c20e4" name="Changes" comment="&quot;Python Framework&quot;">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_user_auth_assertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_auth_assertion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/AutomationAPI/PythonAPI_Framework/tests&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/EE API Testing Framework&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -201,7 +200,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717343820031</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="&quot;Python Framework&quot;">
+      <option name="closed" value="true" />
+      <created>1717345078080</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717345078080</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&quot;Python Framework&quot;">
+      <option name="closed" value="true" />
+      <created>1717528655674</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717528655674</updated>
+    </task>
+    <task id="LOCAL-00015" summary="&quot;Python Framework&quot;">
+      <option name="closed" value="true" />
+      <created>1717528838892</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717528838892</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
