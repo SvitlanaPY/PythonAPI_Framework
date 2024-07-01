@@ -18,7 +18,10 @@ class TestUserAuth(BaseCase):
         response1 = requests.post("https://playground.learnqa.ru/api/user/login", data=auth_data)
 
         # assert response1.status_code == 200, 'Wrong status code'
-        Assertions.assert_code_status(response1, 200)
+        Assertions.assert_code_status(
+            response1,
+            200
+        )
 
         # three asserts and fetching values are moved to class BaseCase:
         # assert "auth_sid" in response1.cookies, "There is no auth cookie in the response1"
@@ -39,8 +42,10 @@ class TestUserAuth(BaseCase):
             cookies={"auth_sid": self.auth_sid}
         )
 
-        Assertions.assert_code_status(response2, 200)
-
+        Assertions.assert_code_status(
+            response2,
+            200
+        )
         Assertions.assert_json_value_by_name(
             response2,
             "user_id",
@@ -65,7 +70,11 @@ class TestUserAuth(BaseCase):
                 cookies={"auth_sid": self.auth_sid}
             )
 
-        Assertions.assert_code_status(response2, 200)
+        Assertions.assert_code_status(
+            response2,
+            200
+        )
+
         Assertions.assert_json_value_by_name(
             response2,
             "user_id",
