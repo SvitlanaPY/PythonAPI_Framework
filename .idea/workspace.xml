@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="feffa24e-2ff1-40ce-9414-1cc34e1c20e4" name="Changes" comment="&quot;Python Framework&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/assertions.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/assertions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_user_auth_assertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_auth_assertion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_user_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_register.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_user_register.TestUserRegister.executor": "Run",
-    "Python tests.Python tests for test_user_register.TestUserRegister.test_create_user_with_existing_email.executor": "Run",
-    "Python tests.Python tests in test_user_auth.py.executor": "Run",
-    "Python tests.Python tests in test_user_register.py.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/EE API Testing Framework"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_user_register.TestUserRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_user_register.TestUserRegister.test_create_user_with_existing_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_user_auth.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_user_register.py.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/EE API Testing Framework&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AutomationAPI\PythonAPI_Framework\tests" />
@@ -298,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717934679313</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&quot;Python Framework&quot;">
+      <option name="closed" value="true" />
+      <created>1719654852098</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719654852098</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
