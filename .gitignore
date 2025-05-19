@@ -2,5 +2,5 @@
 .idea
 .pytest_cache
 __pycache__/
-/workspace.xml
+.idea/workspace.xml
 
