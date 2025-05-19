@@ -1,6 +1,6 @@
 # деякі повтори коду зручно винести в батьківський клас і потім перевикористовувати.
 # Для цього ми створимо клас, який назвемо BaseCase.
-# В окрему директорію під назвою lib - покладемо ключові класи нашого фреймворку, щоб вони були відділені від самих тестів.
+# В окрему директорію під назвою lib (New -> Python Package)  - покладемо ключові класи нашого фреймворку, щоб вони були відділені від самих тестів.
 # В класі BaseCase напишемо методи для отримання значень cookie та header-а із відповідей сервера по імені.
 # Суть методів полягатиме в наступному: спочатку ми будемо передавати в цей метод об"єкт відповіді,
 # який ми отримуємо в результаті запиту,
@@ -17,11 +17,11 @@ from requests import Response
 class BaseCase:
     def get_cookie(self, response: Response, cookie_name):
         assert cookie_name in response.cookies, f"Cannot find cookie with name {cookie_name} in the last response"
-        return response.cookies[cookie_name]   # return response.cookies.get(cookie_name)
+        return response.cookies.get(cookie_name)    # response.cookies[cookie_name]
 
     def get_header(self, response: Response, headers_name):
         assert headers_name in response.headers, f"Cannot find header with name {headers_name} in the last response"
-        return response.headers[headers_name]  # return response.headers.get(header_name)
+        return response.headers.get(headers_name)    # return response.headers[headers_name]
 
     def get_json_value(self, response: Response, key_name):
         try:
@@ -29,7 +29,7 @@ class BaseCase:
         except JSONDecodeError:   # якщо response.json() падає в помилку JSONDecodeError, то про цю помилку потрібно повідомити і потрібно зафіксувати, що наш тест фейланувся
             assert False, f"Response is not in json format. Response text is {response.text}"
         assert key_name in response_as_dict, f"Response JSON doesn't have key {key_name}"
-        return response_as_dict[key_name]
+        return response_as_dict.get(key_name)   # return response_as_dict[key_name]
 
 #       або
 #       def get_json_value(self, response: Response, key_name):
