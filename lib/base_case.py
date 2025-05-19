@@ -10,7 +10,6 @@
 # .gitignore файл - git не буде відмічати в нашому проекті зайві файли.
 
 
-
 from json.decoder import JSONDecodeError
 from requests import Response
 # Response - це class в модулі requests
