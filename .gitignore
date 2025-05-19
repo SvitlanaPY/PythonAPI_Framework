@@ -1,6 +1,5 @@
 # git не буде відмічати в нашому проекті зайві файли
 .idea
 .pytest_cache
-./test_cache
 __pycache__/
-.workspace.xml
+workspace.xml

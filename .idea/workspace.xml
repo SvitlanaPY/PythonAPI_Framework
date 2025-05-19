@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="feffa24e-2ff1-40ce-9414-1cc34e1c20e4" name="Changes" comment="&quot;Python Framework&quot;">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_user_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719869845152</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="&quot;Python Framework&quot;">
+      <option name="closed" value="true" />
+      <created>1747692433514</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1747692433514</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
