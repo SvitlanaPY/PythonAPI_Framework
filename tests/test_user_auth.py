@@ -16,7 +16,7 @@ class TestUserAuth(BaseCase):
 
         response1 = requests.post("https://playground.learnqa.ru/api/user/login", data=auth_data)
         assert response1.status_code == 200, 'Wrong status code'
-        # тепер ми можемо замінити перевірки отримання cookie та hrader на нові методи/ф-ії, які нам доступні в class-і BaseCase:
+        # тепер ми можемо замінити перевірки отримання cookie та header на нові методи/ф-ії, які нам доступні в class-і BaseCase:
         # assert "auth_sid" in response1.cookies, "There is no auth cookie in the response1"
         # self.auth_sid = response1.cookies.get("auth_sid")
         self.auth_sid = self.get_cookie(response1, "auth_sid")
