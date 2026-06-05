@@ -31,11 +31,7 @@ class TestUserAuth(BaseCase):
 
 
     def test_user_auth(self):
-        response2 = requests.get(
-            "https://playground.learnqa.ru/api/user/auth",
-            cookies={"auth_sid": self.auth_sid},
-            headers={"x-csrf-token": self.token}
-        )
+        response2 = requests.get("https://playground.learnqa.ru/api/user/auth", cookies={"auth_sid": self.auth_sid}, headers={"x-csrf-token": self.token})
         assert response2.status_code == 200, 'Wrong status code'
 
         # assert "user_id" in response2.json(), "There is no user id in the response2"
@@ -48,15 +44,9 @@ class TestUserAuth(BaseCase):
     @pytest.mark.parametrize('condition', exclude_params)
     def test_negative_user_auth(self, condition):
         if condition == "no_cookie":
-            response2 = requests.get(
-                "https://playground.learnqa.ru/api/user/auth",
-                headers={"x-csrf-token": self.token}
-            )
+            response2 = requests.get("https://playground.learnqa.ru/api/user/auth", headers={"x-csrf-token": self.token})
         elif condition == "no_token":
-            response2 = requests.get(
-                "https://playground.learnqa.ru/api/user/auth",
-                cookies={"auth_sid": self.auth_sid}
-            )
+            response2 = requests.get("https://playground.learnqa.ru/api/user/auth", cookies={"auth_sid": self.auth_sid})
         assert response2.status_code == 200, 'Wrong status code'
 
         # assert "user_id" in response2.json(), "There is no user id in the response2"
@@ -64,3 +54,4 @@ class TestUserAuth(BaseCase):
         # the above two lines is replaced with one line below
         self.user_id_from_check_method = self.get_json_value(response2, "user_id")
         assert self.user_id_from_check_method == 0, f"User is authorized with {condition}"
+
